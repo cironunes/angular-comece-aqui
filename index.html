@@ -2,18 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>02-bindings</title>
+  <title>03-controllers</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 </head>
-<body ng-app>
-  <div class="container">
-    <p>{{ 1 + 1 }}</p>
-    <p>Hello {{ 'world' }}!</p>
-
-    <input type="text" ng-model="name">
+<body ng-app="myApp">
+  <div class="container" ng-controller="MyCtrl">
     <h1>Hello {{ name }}</h1>
+    <button class="btn btn-primary" ng-click="changeToCiro()">Change to Ciro</button>
   </div>
 
   <script src="bower_components/angular/angular.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
