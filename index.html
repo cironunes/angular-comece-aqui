@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>03-controllers</title>
+  <title>04-controller-as</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 </head>
 <body ng-app="myApp">
-  <div class="container" ng-controller="MyCtrl">
-    <h1>Hello {{ name }}</h1>
-    <button class="btn btn-primary" ng-click="changeToCiro()">Change to Ciro</button>
+  <div class="container" ng-controller="MyCtrl as my">
+    <h1>Hello {{ my.name }}</h1>
+    <button class="btn btn-primary" ng-click="my.changeToCiro()">Change to Ciro</button>
   </div>
 
   <script src="bower_components/angular/angular.js"></script>
