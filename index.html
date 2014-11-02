@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>01-install</title>
+  <title>02-bindings</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 </head>
-<body>
+<body ng-app>
+  <div class="container">
+    <p>{{ 1 + 1 }}</p>
+    <p>Hello {{ 'world' }}!</p>
+
+    <input type="text" ng-model="name">
+    <h1>Hello {{ name }}</h1>
+  </div>
+
   <script src="bower_components/angular/angular.js"></script>
 </body>
 </html>
