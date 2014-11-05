@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>06-filters</title>
+  <title>07-creating-filters</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 </head>
 <body ng-app="myApp">
@@ -12,12 +12,9 @@
     <ul>
       <li ng-repeat="item in my.items | filter: my.searchText">
         <input type="checkbox" ng-model="item.done">
-        {{ item.text }}
+        {{ item.text | dash }}
       </li>
     </ul>
-
-    <span class="alert-success">{{ 20 | currency }}</span>
-    <span class="alert-success">{{ 20 | number:10 }}</span>
   </div>
 
   <script src="bower_components/angular/angular.js"></script>

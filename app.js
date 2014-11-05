@@ -15,12 +15,14 @@ angular.module('myApp')
   });
 
 angular.module('myApp')
+  .filter('dash', function() {
+    return function(text) {
+      return text.split(' ').join('-');
+    };
+  });
+
+angular.module('myApp')
   .controller('MyCtrl', function(TodoFactory) {
     this.items = TodoFactory.todos;
   });
 
-
-angular.module('myApp')
-  .controller('MyCtrl2', function(TodoFactory) {
-    this.items = TodoFactory.todos;
-  });
