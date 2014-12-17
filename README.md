@@ -1,7 +1,7 @@
 # Quer aprender AngularJS? Comece aqui!
 > Código-fonte da série de vídeos gravada para o Google Developers
 
-[![série de vídeos: quer aprender AngularJS? Comece aqui!]()]()
+[série de vídeos: quer aprender AngularJS? Comece aqui!]()
 
 Para ver o resultado depois de cada vídeo mude para a *branch* correspondente 
 ao número do vídeo.
