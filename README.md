@@ -15,10 +15,11 @@ $ git checkout [01-install]
 - 01-install
 - 02-bindings
 - 03-controllers
-- 04-services
-- 05-filters
-- 06-directives
-- 07-routings
+- 04-controller-as
+- 05-services
+- 06-filters
+- 07-creating-filters
+- 08-directive-todo
 
 
 
